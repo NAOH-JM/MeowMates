@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*===BASE===*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Imprima", serif;
+  font-size: 1rem;
+  height: 700vh;
+  margin-inline: 2.5rem;
+}
+
+.FoodReview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 70px;
+  }
+
+.HealthcareTipsContainer {
+    margin-top: 100px;
+    padding: 25px 50px 25px 50px;
+    width:1000px;
+    height:3900px;
+    justify-items: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+.HeadlineContainer {
+    width:950px;
+    height:230px;
+    background-color:#F3DDB9;
+    padding-left: 40px;
+    padding-top:10px;
+    padding-right: 40px;
+    padding-bottom:10px;
+    align-items: center;
+    align-content: left;
+    line-height: 60px;
+  } 
+  
+  .NAV_CONTENT {
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  }
+  
+  .HeadlineTitle {
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 40px;
+  letter-spacing: 2px;
+  
+  }
+  
+  .AuthorOrCreditation{
+  font-size: 20px;
+  word-spacing: 3px;
+  font-weight: bold;
+  }
+  
+  .CatCare {
+    width: 850px;
+    height: 400px;
+  }
+
+  .Picture1 {
+    background-color: #FA9006;
+    width: 900px;
+    height: 440px;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  .MainArticle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    word-spacing: 0px;
+    line-height: 25px;
+    text-align: justify;
+  
+  }
+
+  .Square {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #FA9006 45%, #D18A60 50%, rgb(168, 148, 127) 55%);
+  }
+  
+  .PhotoContainer {
+    margin: 20px;
+    width: 450px;
+    height: 400px;
+    
+  }
+  
+  .CatPhoto {
+    width: 450px;
+    height: 300px;
+  }
+  
+  .ContentHolder {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    background-color: #F3DDB9;
+    padding:20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+  }
+
+  .ContentHolder:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0px 10px 20px rgba(206, 95, 21, 0.5);
+  }
+  
+  .Tips {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .Paragraph {
+    font-size: 18px;
+    word-spacing: 0px;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  
+  .Content-1-Design {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .Content-2-Design{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Paragraph2 {
+    font-size: 18px;
+    word-spacing: 0px;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  
+  .HighlightedWords {
+    color:#FA9006;
+    font-weight: bold;
+  }
+
+  .Content-3-Design {
+    width: 1000px;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .read-more {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    display: none;
+  }
+  
+  #ch5 {
+    display:none;
+  }
+  
+  #ch5:checked ~ .read-more {
+    display: block;
+  }
+
+  #ch5:checked ~ label {
+    display: none;
+  }
+
+  #ch6 {
+    display:none;
+  }
+  
+  #ch6:checked ~ .read-more {
+    display: block;
+  }
+
+  #ch6:checked ~ label {
+    display: none;
+  }
+
+  #ch7 {
+    display:none;
+  }
+  
+  #ch7:checked ~ .read-more {
+    display: block;
+  }
+
+  #ch7:checked ~ label {
+    display: none;
+  }
+
+  #ch8 {
+    display:none;
+  }
+  
+  #ch8:checked ~ .read-more {
+    display: block;
+  }
+
+  #ch8:checked ~ label {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    text-decoration:none;
+    border-radius: 10px;
+    margin-top: 0px;
+    color:#000000;
+    font-size: 20px;
+    transition: background-color 0.7s ease;
+    cursor: pointer;
+  
+  }
+  label:hover {
+    background-color: orange; 
+    color: #ffffff;
+  }
+
+
+
+
+  @media screen and (max-width:1000px){
+    .FoodReview {
+        padding: 0px;
+        height: 600vh;
+        margin-inline: 0;
+      }
+    
+    .HealthcareTipsContainer {
+        margin-top: 100px;
+        padding: 25px 50px 25px 50px;
+        width:340px;
+        height:auto;
+      }
+    
+    .HeadlineContainer {
+        width:300px;
+        height:auto;
+        background-color:#F3DDB9;
+        padding-left: 0px;
+        padding-top:0px;
+        padding-right: 0px;
+        padding-bottom:0px;
+        align-items: center;
+        align-content: left;
+        line-height: 60px;
+      } 
+      
+      .NAV_CONTENT {
+      font-size: 10px;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: 50px;
+      text-align: center;
+      }
+      
+      .HeadlineTitle {
+      font-size: 15px;
+      font-weight: bolder;
+      line-height: 17px;
+      letter-spacing: 2px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: center;
+      
+      }
+      
+      .AuthorOrCreditation{
+        height: 40px;
+      font-size: 10px;
+      word-spacing: 3px;
+      font-weight: bold;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      }
+      
+      .CatCare {
+        width: 240px;
+        height: auto;
+      }
+    
+      .Picture1 {
+        background-color: #FA9006;
+        width: 275px;
+        height: 150px;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .MainArticle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        word-spacing: 0px;
+        line-height: 14px;
+        text-align: justify;
+      
+      }
+
+
+      
+      .PhotoContainer {
+        margin-top: 20px;
+        margin-top: 0px;
+        width: 340px;
+        height: 240px;
+        justify-items: center;
+        
+      }
+      
+      .CatPhoto {
+        width: 280px;
+        height: auto;
+        padding: 8px;
+        margin:0px;
+        background-color: #FA9006;
+      }
+      
+      .ContentHolder {
+        width: 280px;
+        height: auto;
+        padding: 10px;
+        background-color: #F3DDB9;
+        padding:20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease; 
+      }
+    
+      .ContentHolder:hover{
+        transform: translateY(-5px); 
+        box-shadow: 0px 10px 20px rgba(206, 95, 21, 0.5);
+      }
+      
+      .Tips {
+        font-size: 15px;
+        width: auto;
+        height: auto;
+        background-color: #F3DDB9;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+      }
+      
+      .Paragraph {
+        font-size: 10px;
+        word-spacing: 0px; 
+        line-height: 14px;
+        margin-bottom: 10px;
+      }
+      
+      
+      .Content-1-Design {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 340px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+
+      .Content-2-Design{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 340px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .read-more {
+        font-size: 10px;
+        line-height: 30px;
+        text-align: justify;
+        display: none;
+      }
+
+      label {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FA9006;
+        text-decoration:none;
+        border-radius: 10px;
+        margin-top: 0px;
+        color:#ffffff;
+        font-size: 10px;
+        transition: background-color 0.7s ease;
+        cursor: pointer;
+      
+      }
+
+      .Paragraph2 {
+        font-size: 10px;
+        word-spacing: 0px;
+        line-height: 14px;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      .Content-3-Design {
+        width: 1000px;
+        height: 420px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+  }

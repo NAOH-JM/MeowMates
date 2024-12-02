@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*===BASE===*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Imprima", serif;
+  font-size: 1rem;
+  background-color: white;
+  margin-inline: 2.5rem;
+}
+
+/*---FOOD REVIEW PAGE---*/
+.FoodReview {
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 100px;
+    height: 570vh;
+  }
+  
+  .Container1 {
+    width:auto;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Cat-image {
+    margin: 20px;
+    width:360px;
+    height:370px;
+    background-color:  #ffbc65;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(57, 57, 57, 0.2);
+    font-size: 17px;
+    color: #ffffff;
+    align-content: center;
+    justify-items: center;
+  }
+  
+  
+  .Content-container {
+    margin: 20px;
+    width: 900px;
+    height: 390px;
+    justify-items: left;
+  }
+  
+  .Headline {
+  margin: 20px;
+  width: 700px;
+  height: 90px;
+  padding: 20px;
+  align-content: left;
+  font-size: 20px;
+  letter-spacing: 2px;
+  }
+  
+  h2{
+    color:#ff9f21;
+  }
+  
+  .Content-intro {
+    margin: 20px;
+    width: 850px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    align-content: center;
+    justify-items: center;
+    text-align: justify;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #303030;
+    background-color: #ffcc5d;
+    box-shadow: 5px 5px 15px rgba(57, 57, 57, 0.2);
+  }
+
+  .TypeOfFood {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .CatwithFood {
+    margin: 20px;
+    padding: 10px;
+    background-color:  #ffb940;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(57, 57, 57, 0.2);
+  }
+  
+  .Untamed {
+    padding: 10px;
+    width: 900px;
+    height: auto;
+    text-align: justify;
+    line-height: 40px;
+    font-size: 19px;
+  }
+
+  .DryandWet {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #FA9006, #F9B54C); 
+    text-align: center;
+    align-content: center;
+    width: auto;
+    height: 80px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white; 
+    text-transform: uppercase; 
+    border-radius: 30px; 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); 
+  }
+
+  .Card-Container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:100px;
+    width: auto;
+  }
+  
+  
+  /*---1st Card---*/
+  .dry-cat-food {
+    width: 500px;
+    background-color: #ffe1ac;
+    border-radius: 20px;
+    overflow:hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: all 0.3s ease; 
+    font-weight: 600;
+    color: #303030;
+  }
+  
+  .dry-cat-food:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 10px 20px rgba(206, 95, 21, 0.5); 
+  }
+  
+  
+  .content-card {
+    padding: 30px;
+  }
+  
+  .content-card h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .content-card p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  
+  .content-card h1 {
+    color:#ffb14b;
+    text-shadow: 1px 1px 2px rgb(81, 62, 0);
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  
+  .content-card-showless {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    display: none;
+  }
+  
+  #ch {
+    display:none;
+  }
+  
+  #ch:checked ~ .content-card-showless {
+    display: block;
+  }
+
+  #ch:checked ~ label {
+    display: none;
+  }
+
+  #ch2 {
+    display:none;
+  }
+  
+  #ch2:checked ~ .content-card-showless {
+    display: block;
+  }
+
+  #ch2:checked ~ label {
+    display: none;
+  }
+
+
+  label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    text-decoration:none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color:#000000;
+    font-size: 20px;
+    transition: background-color 0.7s ease;
+    cursor: pointer;
+  
+  }
+  label:hover {
+    background-color: orange; 
+    color: #ffffff;
+  }
+
+  
+  @media screen and (max-width:1000px){
+
+    .FoodReview {
+        padding: 50px;
+        height: 500vh;
+      }
+    .Container1 {
+      flex-direction: column;
+      background-color: #ffffff;
+    }
+  
+    .Cat-image {
+      margin: 20px;
+      width:320px;
+      height:225px;
+      font-size: 10px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    
+    
+    .Content-container {
+      margin: 0px;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      row-gap: 3rem;
+    }
+   
+
+    .Headline {
+    margin: 0px;
+    width: 340px;
+    height: 30px;
+    padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-content: left;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    }
+    
+    
+    .Content-intro {
+      margin-top: 15px;
+      width: 340px;
+      height: 140px;
+      padding: 25px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 9px;
+      line-height: 20px;
+      background-color: #ffffff;
+    }
+
+    .CatPic1 {
+        width: 200px;
+        height: 190px;
+    }
+
+    .TypeOfFood {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .CatwithFood {
+        width: 290px;
+        height: 190px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color:  #FA9006;
+      }
+      
+      .Untamed {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        width: 340px;
+        height: auto;
+        text-align: justify;
+        font-size: 9px;
+        line-height: 20px;
+      }
+
+      .DryandWet {
+        margin: 20px 20px 0px 20px;
+        width: auto;
+        padding: 0px;
+        height: 40px;
+        font-size: 10px;
+      }
+
+      .Card-Container {
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: auto;
+      }
+      
+      
+      /*---1st Card and 2nd Card---*/
+
+      .CatPic2 {
+        width: 290px;
+        height: auto;
+      }
+
+      .CatEating1{
+        width: 290px;
+        height: auto;
+      }
+
+      #ch2 {
+        display:none;
+      }
+      
+      #ch2:checked ~ .content-card-showless {
+        display: block;
+      }
+    
+      #ch2:checked ~ label {
+        display: none;
+      }
+      .dry-cat-food {
+        width: 290px;
+        margin: 20px 0px 0px 0px;
+        transition: all 0.3s ease; 
+      }
+      
+      .dry-cat-food:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0px 10px 20px rgba(206, 95, 21, 0.5); 
+      }
+      
+      .content-card {
+        padding: 20px;
+      }
+      
+      .content-card h1 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+      
+      .content-card p {
+        font-size: 9px;
+        line-height: 20px;
+        text-align: justify;
+      }
+      
+      .content-card-showless {
+        font-size: 10px;
+        line-height: 30px;
+        text-align: justify;
+      }
+      
+      label {
+        margin-top: 10px;
+        font-size: 9px;
+        padding: 10px 15px;
+      }
+  }

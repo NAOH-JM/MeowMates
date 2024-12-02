@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Imprima&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=SUSE:wght@100..800&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+body{
+    font-family: "Imprima", serif;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 49);
+    margin-inline: 2.5rem;
+}
+
+.newspaper{
+    box-shadow: 1px 5px 10px rgb(66, 66, 66);
+    background-color: rgb(89, 69, 33);
+    font-family: "Newsreader", serif;
+    margin-top: 4rem;
+    display: grid;
+    height: 850vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 7fr 3fr 10fr 10fr 10fr;
+    grid-template-areas: 
+    "news0 news0 news0 "
+    "news1 news2 news2"
+    "news1 news3 news4"
+    "news5 news5 news5"
+    "news6 news6 news7"
+    "news8 news9 news10"
+    "news11 news11 news11"
+    ;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+.news0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 236, 198);
+    grid-area: news0;
+    height: 300px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.news0 h1{
+    color: rgb(82, 72, 29);
+    font-size: 8rem;
+    font-weight: 600;
+}
+.news0 h6{
+    color: rgb(143, 114, 0);
+    font-size: 25px;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+.news1{
+    padding: 20px;
+    background-color: rgb(255, 251, 233);
+    grid-area: news1;
+}
+.news1 h1{
+    color: rgb(46, 46, 46);
+    font-size: 45px;
+    padding-bottom: 1rem;
+}
+.news1 img{
+    padding-bottom: 1rem;
+    width: 100%;
+}
+span{
+    font-size: 50px;
+    font-weight: 600;
+}
+.news1 p{
+    font-size: 25px;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+.news1 h6{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: end;
+}
+.news2{
+    background-color: rgb(255, 245, 229);
+    padding: 20px;
+    grid-area: news2;
+}
+.news2 h1{
+    color: rgb(46, 46, 46);
+    font-size: 50px;
+    padding-bottom: 1rem;
+}
+.news2 p{
+    font-size: 25px;
+    padding-bottom: .5rem;
+    text-align: justify;
+}
+.news2 h6{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: end;
+}
+.news2 img{
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.news3{
+    background-color: rgb(255, 232, 201);
+    padding: 20px;
+    grid-area: news3;
+}
+.news3 h1{
+    color: rgb(46, 46, 46);
+    font-size: 45px;
+}
+.news3 img{
+    width: 100%;
+}
+.news3 p{
+    text-align: justify;
+}
+.news3 h6{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: end;
+}
+.news4{
+    padding: 20px;
+    background-color: rgb(255, 226, 200);
+    grid-area: news4;
+}
+.news4 img{
+    width: 100%;
+}
+.news4 h1{
+    padding-top: 1rem;
+    color: rgb(46, 46, 46);
+    font-size: 35px;
+}
+.news4 h6{
+    text-align: end;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.news5{
+    padding: 20px;
+    background-color: rgb(255, 250, 204);
+    grid-area: news5;
+}
+.news5 h1{
+    color: rgb(106, 80, 34);
+    text-shadow: 1px 1px rgb(88, 88, 88);
+    text-align: center;
+    font-size: 70px;
+}
+.news5 h2{
+    padding-top: 1rem;
+    font-size: 50px;
+    text-align: center;
+}
+.news6{
+    padding: 20px;
+    background-color: rgb(245, 236, 220);
+    grid-area: news6;
+}
+.news6 h1{
+    color: rgb(41, 41, 41);
+    font-size: 48px;
+}
+.news6 img{
+    width: 100%;
+}
+.news6 p{
+    text-align: justify;
+    padding-top: 1rem;
+    font-size: 20px;
+}
+.news6 h6{
+    font-size: 15px;
+    text-align: end;
+    font-weight: 500;
+}
+.news7{
+    background-color: rgb(237, 212, 190);
+    padding: 20px;
+    grid-area: news7;
+}
+.news7 img{
+    width: 100%;
+}
+.news7 h1{
+    color: rgb(36, 36, 36);
+    padding-top: 1rem;
+    font-size: 50px;
+}
+.news7 h5{
+    padding-top: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+.news7 p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+.news7 h6{
+    font-weight: 500;
+    text-align: end;
+    font-size: 15px;
+}
+.news8{
+    padding: 20px;
+    background-color: rgb(234, 206, 184);
+    grid-area: news8;
+}
+.news8 img{
+    width: 100%;
+}
+.news8 h1{
+    color: rgb(104, 73, 40);
+    font-size: 45px;
+}
+.news8 h5{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 20px;
+    text-align: justify;
+}
+.news8 p{
+    padding-bottom: 1rem;
+    font-size: 20px;
+    text-align: justify;
+}
+.news8 h6{
+    font-weight: 500;
+    font-size: 13px;
+    text-align: end;
+}
+.news9{
+    padding: 20px;
+    background-color: rgb(237, 237, 213);
+    grid-area: news9;
+}
+.news9 img{
+    width: 100%;
+}
+.news9 h1{
+    color: rgb(69, 54, 36);
+    font-size: 50px;
+}
+.news9 p{
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+.news9 h6{
+    font-size: 15px;
+    text-align: end;
+    font-weight: 500;
+}
+.news10{
+    padding: 20px;
+    background-color: rgb(241, 213, 177);
+    grid-area: news10;
+}
+.news10 img{
+    width: 100%;
+}
+.news10 h1{
+    text-align: justify;
+    font-size: 50px;
+    color: rgb(75, 43, 3);
+}
+.news10 h5{
+    text-align: justify;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+.news10 p{
+    padding-bottom: 1rem;
+    font-size: 20px;
+    text-align: justify;
+}
+.news10 h6{
+    text-align: end;
+    font-size: 15px;
+    font-weight: 500;
+}
+.news11{
+    padding: 20px;
+    background-color: rgb(237, 216, 174);
+    grid-area: news11;
+}
+.news11 img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.news11 h1{
+    color: rgb(79, 47, 21);
+    font-size: 60px;
+}
+.news11 p{
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+.news11 h6{
+    text-align: end;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1210px) {
+    body{
+        margin-inline: 0;
+    }
+    .news0 h1{
+        font-size: 3rem;
+    }
+    .news5 h1{
+        font-size: 50px;
+    }
+    .newspaper{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "news0"
+        "news1"
+        "news2"
+        "news3"
+        "news4"
+        "news5"
+        "news6"
+        "news7"
+        "news8"
+        "news9"
+        "news10"
+        "news11"
+
+        ;
+    }
+}
+footer{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: rgb(255, 174, 0);
+    height: 440px;
+    width: 95%;
+    position: absolute;
+    bottom: 1;
+}
+.footer-design{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 40px;
+    background-color: rgb(255, 202, 77);
+}
+.footer-title{
+    padding-left: 4rem;
+    padding-top: 1rem;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 1px 2px 1px rgb(191, 127, 0);
+}
+.footer-title img{
+    width: 50px;
+}
+.footer-contents{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+.footer-contents div{
+    margin-top: 20px;
+    color: white;
+    border-radius: 40px;
+    background-color: rgb(255, 180, 52);
+    text-shadow: 1px 1px 1px rgb(151, 151, 151);
+}
+.about-us{
+    width: 400px;
+}
+.footer-contents h1{
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.footer-contents p{
+    font-size: 20px;
+    padding: 20px;
+}
+.contact-info h1{
+    margin-bottom: 1rem;
+}
+.contact-info p{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.social-media-links{
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+.fb{
+    width: 50px;
+    height: 50px;
+}
+.ig{
+    width: 63px;
+    height: 63px;
+}
+.x{
+    width: 40px;
+    height: 40px;
+}
+.yt{
+    width: 65px;
+}
+.important-links{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+.important-links a{
+    font-size: 20px;
+    padding-left: 1rem;
+    color: white;
+    text-decoration: underline;
+}
+.important-links div{
+    display: flex;
+    flex-direction: column;
+}
+.important-links h1{
+    padding-bottom: 1rem;
+}
+
+.cat-qoutes{
+    text-align: center;
+    width: 400px;
+}
+.cat-qoutes h2{
+    text-align: start;
+    padding-left: 2rem;
+    font-size: 40px;
+}
+.cat-qoutes h3{
+    text-align: start;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-size: 25px;
+}
+.cat-qoutes p{
+    padding: 0;
+    margin-right: 1.5rem;
+    text-align: end;
+}
+.copyright{
+    color: white;
+    text-shadow: 1px 1px gray;
+    margin-top: 1.9rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:450px){
+    footer{
+        background-color: rgb(255, 170, 0);
+        width: 100%;
+        height: 90vh;
+    }
+    .footer-title{
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-title h1{
+        padding-left: 0;
+        text-align: start;
+        font-size: 1.5rem;
+    }
+    .footer-title img{
+        width: 40px;
+    }
+    
+    .footer-contents{
+        flex-direction: column;
+        row-gap: 0;
+    }
+    .footer-contents div{
+        margin-top: 1px;
+    }
+    
+    .about-us{
+        width: 100%;
+        height: 100px;
+    }
+    .footer-contents h1{
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-top: 0;
+        font-size: 20px;
+    }
+    .footer-contents p{
+        padding-top: 0.5rem;
+        font-size: 15px;
+    }
+    .important-links{
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+    }
+    .important-links div{
+        display: block;
+        
+    }
+    .important-links a{
+        padding-top: 1rem;
+        font-size: 10px;
+    }
+
+    .important-links h1{
+        padding-top: .5rem;
+    }
+    .contact-info{
+        height: 180px;
+    }
+    .contact-info h1{
+        padding-top: 1rem;
+    }
+    .contact-info p{
+        padding-top: 0;
+    }
+    .cat-qoutes{
+        text-align: start;
+        width: 100%;
+    }
+    .cat-qoutes h3{
+        text-align: start;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        font-size: 20px;
+    }
+    .copyright{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+}
